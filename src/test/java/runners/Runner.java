@@ -11,13 +11,14 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failedRerun.txt"
+                "rerun:target/failedRerun.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome=false,
         features = "./src/test/resources/features",     //Path of features folder
         glue = {"stepdefinitions", "hooks"},      //Path of step definitions  //they are in sibling file, so I write just stepdefinitions
         dryRun = false,
-        tags = "@MedunnaRoom"       //dont run all of the features, just run scenario which has @....
+        tags = "@failed_tests"       //dont run all of the features, just run scenario which has @....
 
 )
 

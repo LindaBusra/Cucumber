@@ -76,4 +76,7 @@ DataTables are similar to Scenario Outline
         Use | | pipes in feature file steps to use data tables
         We can get data in different forms such as List<String, List<Map<String,List<List<String,…
      */
+
+    //for create test reports, especially spark reports
+    //https://www.extentreports.com/docs/versions/4/java/spark-reporter.html
 }
