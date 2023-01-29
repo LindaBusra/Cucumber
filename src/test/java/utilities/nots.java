@@ -34,7 +34,46 @@ public class nots {
     Feature file is not technical, but Step Definitions is technical
 
 
+    Scenario Outline:
+    What is it?
+        It is used to run the same scenario with different data multiple times
+        It must be followed by an Examples keyword. Examples keyword is used to pass data
+        Scenario Outline is used for parametrizating of the feature files
+        It is used to pass test data dynamically
+        This is very common and use ful in cucumber
+    Cucumber reports plugins
+
+        We can easily generate cucumber reports using report plugins in the runner
+        We can generate different reports such as HTML, json, and xml; but the most common one is the HTML report
+DATA TABLES IN CUCUMBER
+DataTables are user to pass test data
+We especially use DataTables for passing multiple data
+DataTables are similar to Scenario Outline
+    Difference between DataTables and Scenario Outline?
+            In DataTables No Examples keyword
+            DataTables can be use in ANY STEP to provide data, but Examples keyword can ONLY be used at the end of the
+            scenario to provide data
+            In DataTables, use Scenario:
+            In Scenario Outline: use Scenario Outline and Examples
+            DataTables returns DataTables object in the method, so we have to use Collections to use them in the step
+            definitions
+            Scenario Outline returns a string in the method, so it is easier to get and use.
+            DataTables are not as popular as Scenario Outline.
+
+     */
+
+     /*
+     1. Datatables using a List<String>  list of string
+     2. Datatables as List<List<String>>  List of list
+     3. Datatables as List<Map<String,String>>  list of map
 
 
+    Summary:
+        Scenario Outline : Used for DDT. Very useful.Please LEARN and USE .
+        Example keyword must be used
+        Data Tables : Used for DDT. Not as common as Scenario Outline.
+        We get data from any step from the feature file
+        Use | | pipes in feature file steps to use data tables
+        We can get data in different forms such as List<String, List<Map<String,List<List<String,…
      */
 }
