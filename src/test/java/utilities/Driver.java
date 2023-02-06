@@ -37,6 +37,9 @@ public class Driver {
             } else if ("firefox".equals(browser)) {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
+            } else if ("edge".equals(browser)) {
+                WebDriverManager.edgedriver().setup();
+                driver = new FirefoxDriver();
             } else if ("ie".equals(browser)) {
                 WebDriverManager.iedriver().setup();
                 driver = new InternetExplorerDriver();

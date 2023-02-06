@@ -17,4 +17,4 @@ Feature: search_feature
     | bmw       |
     | lexus     |
     | acura     |
-    #under the Examples, I write what I you want to search, I am testing 6 scenarios.
+    #under the Examples, I write what I want to search, I am testing 6 scenarios.

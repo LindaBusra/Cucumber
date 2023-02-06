@@ -1,6 +1,7 @@
 package utilities;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +20,7 @@ public class ReusableMethods {
     /*HOW DO YOU GET SCREENSHOT?
      * I use getScreenShotAs method to take a screenshot in selenium in my framework
      * I actually store the screenshot with unique name in my framework*/
+
 
     public static String getScreenshot(String name) throws IOException {
 
@@ -222,9 +224,19 @@ public class ReusableMethods {
     public static void selectElementFromDropdown(WebElement dropDown, String element) {  //select element by visible text
         Select select = new Select(dropDown);
         select.selectByVisibleText(element);
+    }
+
+    public static void assertion(WebElement actual, String expected) {  //select element by visible text
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(actual));
+
+        Assert.assertEquals(actual.getText(), expected);
+
+    }
+
 
 //---------------------------------------------------------------------------------------------------
 
-    }
+
 
 }

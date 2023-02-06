@@ -1,7 +1,7 @@
-Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
+@Automation_Exercise
+Feature: The tests on the Automation Exercise page should be done
 
-
-  @tc01   @run
+  @tc01
   Scenario: TC01 Register User
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -22,7 +22,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify that ACCOUNT DELETED! is visible and click Continue button
     And Close browser
 
-  @tc02   @run
+  @tc02
   Scenario: TC02 Login User with correct email and password
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -35,7 +35,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify that ACCOUNT DELETED! is visible
     And Close browser
 
-  @tc03  @run
+  @tc03
   Scenario:TC03: Login User with incorrect email and password
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -46,7 +46,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify error Your email or password is incorrect! is visible
     And Close browser
 
-  @tc04  @run
+  @tc04
   Scenario: TC04 Logout User
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -59,7 +59,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify that user is navigated to login page
     And Close browser
 
-  @tc05 @run
+  @tc05
   Scenario: TC05 Register User with existing email
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -70,7 +70,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify error Email Address already exist! is visible
     And Close browser
 
-  @tc06 @run
+  @tc06
   Scenario: TC06: Contact Us Form
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -83,14 +83,14 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify success message Success! Your details have been submitted successfully. is visible
     And Click Home button and verify that landed to home page successfully
 
-  @tc07 @run
+  @tc07
   Scenario: TC07 Verify Test Cases Page
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
     And Click on Test Cases button
     And Verify user is navigated to test cases page successfully
 
-  @tc08 @run
+  @tc08
   Scenario: Verify All Products and product detail page
     Given Launch browser and Navigate to url "autoExUrl"
     And Verify that home page is visible successfully
@@ -119,3 +119,7 @@ Feature: US001 Automation Exercise sayfasindaki testler yapilmalidir
     And Verify text SUBSCRIPTION
     And Enter email address in input and click arrow button
     And Verify success message You have been successfully subscribed! is visible
+
+
+
+#https://github.com/gokhanagar/Selenium/blob/master/Cucumber/src/test/resources/features/US001_autoExercise.feature

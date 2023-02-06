@@ -22,7 +22,6 @@ public class GooglePage {
     public WebElement popUpAccept;
 
 
-
     @FindBy(name = "q")
     public WebElement searchBox;
 

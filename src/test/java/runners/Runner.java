@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -15,16 +14,16 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome=false,
-        features = "./src/test/resources/features",     //Path of features folder
-        glue = {"stepdefinitions", "hooks"},      //Path of step definitions  //they are in sibling file, so I write just stepdefinitions
+        features = "./src/test/resources/features",
+        glue = {"stepdefinitions", "hooks"},
         dryRun = false,
-        tags = "@failed_tests"       //dont run all of the features, just run scenario which has @....
+        tags = "@Demo_QA_2"
 
 )
-
 public class Runner {
-
 }
+
+
 
 //we should do create a runner that runs only the files that we will run again
 

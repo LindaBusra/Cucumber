@@ -8,60 +8,57 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {
-
-    //    Hooks is used to run before and after each Scenario or Scenario Outline.
-
-    @Before     //use from io.cucumber.java
+    /*
+    Hooks is used to run before and after each SCENARIO
+    i.g. If feature file has 2 scenario, Hooks will be run 2 times. It is based on the Scenario.
+    To be able to run the Hooks class, we use 'glue' tag in Runner class, put "hooks" as parameter
+    By putting specific tag like @After("@browser and not @headless") we can put a condition to run the Hooks class => Conditional hooks
+    When we add Hooks to our runner it will generate report automatically and plus it will take screenshot if something fails.
+    Run from runner class. It will generate HTML report and screenshot under "Target -> xml-report -> default-cucumber-reports.html" => right click and open in browser
+     */
+    @Before //comes from cucumber.java(not JUnit)
     public void setUpScenario(){
 //        System.out.println("Before Method");
     }
 
 
-    @After      //use from io.cucumber.java
-    public void tearDownScenario(Scenario scenario){     //like Listener, it understands if a scenario is pass, failed or skipped
+    //This after method will understand automatically if the scenario is passed, skipped, or failed(like Listeners in TestNG)
+    @After
+    public void tearDownScenario(Scenario scenario){
 //        System.out.println("After Method");
-        if(scenario.isFailed()) {       //capturing the screenshot when a scenario fails and attaching it to report
-          final byte[] failedScreenshot =   ((TakesScreenshot) Driver.getDriver()).getScreenshotAs((OutputType.BYTES));
-            scenario.attach(failedScreenshot,"image/png","failed_scenario"+scenario.getName()+"");
+        if(scenario.isFailed()){//capturing the screenshot when a scenario fails and attaching to the report
+            final byte[] failedScreenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(failedScreenshot, "image/png", "failed_scenario"+scenario.getName()+"");
             Driver.closeDriver();
         }
     }
 
-
-    //This Before hooks only runs for @smoke_test tagged scenarious.
-//    @Before (value = "@smoke_tests")  //it can be used
-    @Before ("@smoke_tests")
-    public void setUpSmokeScenarious(){
-        System.out.println("Run for only Smoke Test Scenarious");
+    //    This Before hooks ONLY RUNS for @smoke_test TAGGED SCENARIOS ==>> Conditional Hooks
+//    @Before(value = "@smoke_tests")
+    @Before("@smoke_tests")
+    public void setUpSmokeScenarios(){
+        System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
 
-
-
-    //This After hooks only runs for @smoke_test tagged scenarious.
-    @After ("@smoke_tests")
-    public void tearDownSmokeScenarious(){
-        System.out.println("Run for only Smoke Test Scenarious");
+    //This After hooks ONLY RUNS for @smoke_test TAGGED SCENARIOS
+    @After("@smoke_tests")
+    public void tearDownSmokeScenarios(){
+        System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
-
-
 
 }
+/*
+Hooks is just a Java class, but is a special class. It is running 'before' or especially 'after' each Scenario.
+After method is usually used to capture screenshot.
+Like a TestBase class.
+Hooks is specific for Cucumber.
+We can put the code that we want to run before and after each Scenario.
+ */
 
-    /*
-
-What is hooks?
-    Hooks is a class that runs Before or After each Scenario
-Why do you use?
-    I use hooks class to generate the reports with screenshot.
-    My after method especially helpful to capture screenshot when a Scenario fails automatically.
+/*
+Why do we use Hooks class in our framework?
+We use hooks class to generate the reports with screenshot.
+My after method especially helpful to capture screenshot when a Scenario fails automatically.
 What is in it?
-    It has Before and After methods. I have reports method to capture the screenshot
-
-
-        Conditional Hooks
-        We can say after annotation :
-        @After  ("@browser and not @headless")    -->run @browser tags, but not run @headless tags
-
-
-
-     */
+It has Before and After methods. I have reports method to capture the screenshot
+ */

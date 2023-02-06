@@ -33,6 +33,7 @@ public class LoginStepDefinitions {
 
 
         //2. way : Get Data as list of Map of String  List<Map<String,String>>
+
         List<Map<String,String>> customerData = credentials.asMaps(String.class, String.class);
 //        System.out.println(customerData);
 
@@ -49,9 +50,9 @@ public class LoginStepDefinitions {
 
     }
 
-    @Then("verify the next page url contains login keyword")
-    public void verify_the_next_page_url_contains_login_keyword() {
 
+    @Then("verify the next page url contains login keyword")
+    public void verifyTheNextPageUrlContainsLoginKeyword() {
 
         ReusableMethods.waitFor(5);
         //Below Assertion fails
@@ -81,7 +82,7 @@ public class LoginStepDefinitions {
 
     I have Utils classes. In the util classes I used collection a lot. For example, I have Excel Util class
         When I get the column names of an excel sheet, I store column names in List<String>
-        When I the data list from excel, I put data list in List<Map<String, String>>
+        When I get the data list from excel, I put data list in List<Map<String, String>>
 
 
  */

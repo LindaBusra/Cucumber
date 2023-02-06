@@ -29,11 +29,15 @@ public class ExcelStepDefinitions {
         homePage = new HomePage();
         loginPage =new LoginPage();
         ReusableMethods.waitFor(1);
+
+        //if user is in home page and want to click login button
         try {
             homePage.homePageLoginLink.click();
             ReusableMethods.waitFor(1);
         }catch (Exception e){
         }
+
+        //if user is already in login and want to log out
         try{
             ReusableMethods.waitFor(1);
             homePage.userID.click();
@@ -59,7 +63,7 @@ public class ExcelStepDefinitions {
 
 //        getDataList() method returns all excel data
 //        we stored that data in allTestData variable
-        allTestData=excelUtil.getDataList();
+        allTestData = excelUtil.getDataList();
 
 //        System.out.println(allTestData);
 //        System.out.println(excelUtils.getColumnsNames());

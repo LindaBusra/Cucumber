@@ -1,4 +1,4 @@
-package utilities;
+package stepdefinitions;
 
 public class nots {
 
@@ -75,8 +75,36 @@ DataTables are similar to Scenario Outline
         We get data from any step from the feature file
         Use | | pipes in feature file steps to use data tables
         We can get data in different forms such as List<String, List<Map<String,List<List<String,…
-     */
+
 
     //for create test reports, especially spark reports
     //https://www.extentreports.com/docs/versions/4/java/spark-reporter.html
+
+
+       Selenium Grid ---> official documents: https://www.selenium.dev/documentation/grid/getting_started/
+       We can run test cases on remote environment
+       Hub and Node -->  Hub:server, in that server we can generate multiple machines which is called nodes.
+       Notes:Virtual machine, remote machine. We can run the same test cases with different machines as the same time with Selenium Grid.
+
+
+      JDBC:Java Database Connectivity, it is an API, like Selenium.
+      JDBC is used for data automation
+
+
+    HOW TO USE JDBC?
+    1. Connect Database
+            • connection=DriverManager.getConnection(“url”, “username”, “password”);
+    2.Send query and get data
+            • statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
+    ResultSet.CONCUR_READ_ONLY);
+    3. Used the queries in the test cases for assertions
+            • resultSet = statement.executeQuery("SELECT * FROM Book;”);
+            • String beklenenDeger = resultSet.getString(“BookName”);
+            • Assert.assertEquals(beklenenDeger, gercekDeger);
+
+
+
+
+        */
+
 }

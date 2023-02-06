@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 29, 2023 06:37:29 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 5, 2023 10:22:21 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 29, 2023 06:37:29 pm</h3>
+<h3>Feb 5, 2023 10:22:21 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 29, 2023 06:37:48 pm</h3>
+<h3>Feb 5, 2023 10:22:41 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='72%'><b>8</b> steps passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='9%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"hooks_test":16.928
+"US1017 explicitly wait kullanimi":18.724
 };
 </script>
 <div class="row">
@@ -177,7 +177,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@failed_tests</td>
+<td>@Demo_QA_2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Demo_QA</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -218,10 +226,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 8,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -243,7 +251,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@failed_tests</a>
+<a class="dropdown-item" href="#">@Demo_QA_2</a><a class="dropdown-item" href="#">@Demo_QA</a>
 </ul>
 </li>
 </ul>
@@ -254,9 +262,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">hooks_test</p>
+            <p class="name">US1017 explicitly wait kullanimi</p>
             <p class="text-sm">
-              <span>18:37:30</span> / <span>00:00:16:928</span>
+              <span>22:22:22</span> / <span>00:00:18:724</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -264,10 +272,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">hooks_test</h5>
-<span class='badge badge-success'>01.29.2023 18:37:30</span>
-<span class='badge badge-danger'>01.29.2023 18:37:47</span>
-<span class='badge badge-default'>00:00:16:928</span>
+<h5 class="test-status text-fail">US1017 explicitly wait kullanimi</h5>
+<span class='badge badge-success'>02.05.2023 22:22:22</span>
+<span class='badge badge-danger'>02.05.2023 22:22:41</span>
+<span class='badge badge-default'>00:00:18:724</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -279,7 +287,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC_01_test</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC23 ilgili allertionlari kapatma</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -287,57 +295,81 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.DataTablesStepDefinitions.user_is_on_page(java.lang.String)">
-                <span>Given user is on "https://www.bluerentalcars.com/" page</span>
+              <div class="step pass-bg" title="stepdefinitions.P04DataTableStepsDefinitions.kullanici_anasayfasina(java.lang.String)">
+                <span>Given kullanici "demoqaUrl" anasayfasina</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepdefinitions.LoginStepDefinitions.user_enters_customer_email_and_customer_password(io.cucumber.datatable.DataTable)">
-                <span>And user enters customer_email and customer_password</span>
-      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>jack@gmail.com</td><td>12345</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.alerts_frame_windows_butonuna_tiklar()">
+                <span>And Alerts,Frame,Windows butonuna tiklar</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#formBasicEmail"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.kullanici_sn_bekler(java.lang.Integer)">
+                <span>And kullanici 1 sn bekler</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.alerts_e_tiklar()">
+                <span>And Alerts'e tiklar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.kullanici_sn_bekler(java.lang.Integer)">
+                <span>And kullanici 2 sn bekler</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.on_button_click_alert_will_appear_after_five_seconds_karsisindaki_click_me_butonuna_basar()">
+                <span>And On button click, alert will appear after five seconds karsisindaki click me butonuna basar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DemoqaStepDefinitions.allert_in_gorunur_olmasini_bekleyin()">
+                <span>And Allert'in gorunur olmasini bekleyin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.DemoqaStepDefinitions.allert_uzerindeki_yazinin_this_alert_appeared_after_five_seconds_oldugunu_test_edin()">
+                <span>Then Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This alert appeared after 5 seconds}
+  (Session info: chrome=109.0.5414.120): This alert appeared after 5 seconds
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db0e25bde8f109e6ed8905d91c5cf771, findElement {using=id, value=formBasicEmail}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50722/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db0e25bde8f109e6ed8905d91c5cf771
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+Command: [346cca106ea30c7afe5849d9fc8f7b48, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 346cca106ea30c7afe5849d9fc8f7b48
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
-	at stepdefinitions.LoginStepDefinitions.user_enters_customer_email_and_customer_password(LoginStepDefinitions.java:40)
-	at ✽.user enters customer_email and customer_password(file:///C:/Users/busra/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
+	at utilities.Driver.getDriver(Driver.java:55)
+	at stepdefinitions.DemoqaStepDefinitions.allert_uzerindeki_yazinin_this_alert_appeared_after_five_seconds_oldugunu_test_edin(DemoqaStepDefinitions.java:90)
+	at ✽.Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin(file:///C:/Users/busra/IdeaProjects/my-cucumber-project/./src/test/resources/features/DemoQA.feature:25)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" >
-                <span>Then verify the next page url contains login keyword.</span>
+              <div class="step skip-bg" title="stepdefinitions.DemoqaStepDefinitions.ok_yazisina_tiklayarak_alerti_kapatin()">
+                <span>And Ok yazisina tiklayarak alerti kapatin</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.P01AmazonSearchSteps.sayfayi_kapatir()">
+                <span>And sayfayi kapatir</span>
       <div>Step skipped
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>hooks.Hooks.tearDownScenario(io.cucumber.java.Scenario)</span>
-      <div>failed_scenarioTC_01_test
+      <div>failed_scenarioTC23 ilgili allertionlari kapatma
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
     
@@ -365,7 +397,7 @@ Session ID: db0e25bde8f109e6ed8905d91c5cf771
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -374,12 +406,12 @@ Session ID: db0e25bde8f109e6ed8905d91c5cf771
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@failed_tests</p>
+<p class="name">@Demo_QA_2</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@failed_tests</h4>
+<h4>@Demo_QA_2</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -393,11 +425,47 @@ Session ID: db0e25bde8f109e6ed8905d91c5cf771
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:37:30 pm</td>
+<td>22:22:22 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01_test</a>
+<a href="#" class="linked" test-id='1' id='2'>TC23 ilgili allertionlari kapatma</a>
 <div class="">
-<span class="badge badge-default">hooks_test.TC_01_test</span>
+<span class="badge badge-default">US1017 explicitly wait kullanimi.TC23 ilgili allertionlari kapatma</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Demo_QA</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Demo_QA</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:22:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC23 ilgili allertionlari kapatma</a>
+<div class="">
+<span class="badge badge-default">US1017 explicitly wait kullanimi.TC23 ilgili allertionlari kapatma</span>
 </div>
 </td>
 </tr>
@@ -426,12 +494,12 @@ Session ID: db0e25bde8f109e6ed8905d91c5cf771
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="name">org.openqa.selenium.UnhandledAlertException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
+<h4>org.openqa.selenium.UnhandledAlertException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -445,11 +513,11 @@ Session ID: db0e25bde8f109e6ed8905d91c5cf771
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:37:36 pm</td>
+<td>22:22:40 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='5'>And user enters customer_email and customer_password</a>
+<a href="#" class="linked" test-id='1' id='11'>Then Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin</a>
 <div class="">
-<span class="badge badge-default">hooks_test.TC_01_test.And user enters customer_email and customer_password</span>
+<span class="badge badge-default">US1017 explicitly wait kullanimi.TC23 ilgili allertionlari kapatma.Then Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin</span>
 </div>
 </td>
 </tr>

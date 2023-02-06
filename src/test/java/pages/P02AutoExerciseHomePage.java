@@ -14,135 +14,124 @@ public class P02AutoExerciseHomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement signupLoginButton;
+        @FindBy(xpath = "//a[text()=' Signup / Login']")
+        public WebElement signupLoginButton;
 
-    @FindBy(xpath = "//*[.='New User Signup!']")
-    public WebElement newUserSignupText;
+        @FindBy(xpath = "//h2[text()='New User Signup!']")
+        public WebElement newUserSignupTextElement;
 
-    @FindBy(xpath = "//input[@data-qa='signup-name']")
-    public WebElement nameInput;
+        @FindBy(xpath = "//input[@name='name']")
+        public WebElement newUserSignupNameBox;
 
-    @FindBy(xpath = "//input[@data-qa='signup-email']")
-    public WebElement emailInput;
+        @FindBy(xpath = "//input[@data-qa='signup-email']")
+        public WebElement newUserSignupEmailBox;
 
-    @FindBy(xpath = "//input[@data-qa='signup-button']")
-    public WebElement signupButton;
+        @FindBy(xpath = "//button[text()='Signup']")
+        public WebElement signupButton;
 
-    @FindBy(xpath = "//*[.='Enter Account Information']")
-    public WebElement enterAccountInformationText;
+        @FindBy(xpath = "//*[text()='Enter Account Information']")
+        public WebElement enterAccountInfoTextElement;
 
-    @FindBy(id = "id_gender1")
-    public WebElement titleMrRadioButton;
+        @FindBy(xpath = "//input[@value='Mr']")
+        public WebElement titleMrRadioButton;
 
-    @FindBy(id = "newsletter")
-    public WebElement newsletterCheckBox;
+        @FindBy(id = "newsletter")
+        public WebElement newsletterCheckbox;
 
-    @FindBy(id = "optin")
-    public WebElement receiveSpecialOffers;
+        @FindBy(id = "optin")
+        public WebElement specialOffersCheckbox;
 
-    @FindBy(id = "first_name")
-    public WebElement firstNameInput;
+        @FindBy(xpath = "//*[text()='Account Created!']")
+        public WebElement accountCreatedTextBox;
 
-//    @FindBy(xpath = "//button[data-qa='create-account']")
-//    public WebElement createAccountButton;
+        @FindBy(xpath = "//a[text()='Continue']")
+        public WebElement accountCreatedContinueButton;
 
-    @FindBy(xpath = "//*[.='Account Created!']")
-    public WebElement accountCreatedText;
+        @FindBy(xpath = "//*[text()=' Logged in as ']")
+        public WebElement userNameElement;
 
-    @FindBy(xpath = "//a[@data-qa='continue-button']")
-    public WebElement continueButton;
+        @FindBy(xpath = "//*[text()=' Delete Account']")
+        public WebElement deleteAccountElement;
 
-    @FindBy(xpath = "//*[.=' Logged in as ']")
-    public WebElement loggenInAsText;
+        @FindBy(xpath = "//input[@data-qa='login-email']")
+        public WebElement loginYourAccountEmailBox;
 
-    @FindBy(xpath = "//a[@href='/delete_account']")
-    public WebElement deleteAccountButton;
+        @FindBy(xpath = "//input[@data-qa='login-password']")
+        public WebElement loginYourAccountPasswordBox;
 
-    @FindBy(xpath = "//*[.='Account Deleted!']")
-    public WebElement accountDeletedText;
+        @FindBy(xpath = "//button[text()='Login']")
+        public WebElement loginButton;
 
-    @FindBy(xpath = "//*[.='Login to your account']")
-    public WebElement loginToYourAccountText;
+        @FindBy(xpath = "//h2[.='Login to your account']")
+        public WebElement loginYourAccountTextBox;
 
-    @FindBy(xpath = "//input[@data-qa='login-email']")
-    public WebElement loginEmail;
+        @FindBy(xpath = "//p[.='Your email or password is incorrect!']")
+        public WebElement emailOrPasswordIncorrectText;
 
-    @FindBy(xpath = "//input[@data-qa='login-password']")
-    public WebElement loginPassword;
+        @FindBy(xpath = "//a[.=' Logout']")
+        public WebElement logoutButton;
 
-    @FindBy(xpath = "//input[@data-qa='login-button']")
-    public WebElement loginButton;
+        @FindBy(xpath = "//p[.='Email Address already exist!']")
+        public WebElement emailAdressExistTextElement;
 
-    @FindBy(xpath = "//a[@href='/delete_account']")
-    public WebElement deleteAccountText;
+        @FindBy(xpath = "//a[.=' Contact us']")
+        public WebElement contactUsButton;
 
-    @FindBy(xpath = "//*[.='Your email or password is incorrect!']")
-    public WebElement emailOrPassswordIncorrectText;
+        @FindBy(xpath = "//*[.='Get In Touch']")
+        public WebElement getInTouchTextElement;
 
-    @FindBy(xpath = "//a[@href='/logout']")
-    public WebElement logoutButton;
+        @FindBy(xpath = "//input[@name='name']")
+        public WebElement contactUsNameBox;
 
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement singUpLoginButton;
+        @FindBy(xpath = "//input[@name='upload_file']")
+        public WebElement uploadFileButton;
 
-    @FindBy(xpath = "//*[.='Email Address already exist!']")
-    public WebElement emailAddressAlreadyExistText;
+        @FindBy(xpath = "//input[@name='submit']")
+        public WebElement contactUsSubmitButton;
 
-    @FindBy(xpath = "//a[@href='/contact_us']")
-    public WebElement contactUsButton;
+        @FindBy(xpath = "//div[@class='status alert alert-success']")
+        public WebElement contactUsAlertSuccessText;
 
-    @FindBy(xpath = "//*[.='Get In Touch']")
-    public WebElement getInTouchText;
+        @FindBy(xpath = "//span[.=' Home']")
+        public WebElement contactUsSuccessHomeButton;
 
-    @FindBy(xpath = "//input[@name='name']")
-    public WebElement contactUsNameInput;
+        @FindBy(xpath = "//a[.=' Test Cases']")
+        public WebElement testCasesButton;
 
-    @FindBy(xpath = "//input[@name='upload_file']")
-    public WebElement uploadFileButton;
+        @FindBy(xpath = "//b[.='Test Cases']")
+        public WebElement testCasesTitleText;
 
-    @FindBy(xpath = "//input[@data-qa='submit-button']")
-    public WebElement contactUsSubmitButton;
+        @FindBy(xpath = "//a[text()=' Products']")
+        public WebElement productsButton;
 
-    @FindBy(xpath = "//div[@class='status alert alert-success']")
-    public WebElement contactUsSuccessMessage;
+        @FindBy(xpath = "//h2[text()='All Products']")
+        public WebElement allProductsTextElement;
 
-    @FindBy(xpath = "//span[.=' Home']")
-    public WebElement contactUsHomeButton;
+        @FindBy(xpath = "//div[@class='productinfo text-center']")
+        public List<WebElement> productsListElements;
 
-    @FindBy(xpath = "//button[.='Test Cases']")
-    public WebElement testCasesButton;
+        @FindBy(xpath = "(//li[.='View Product'])[1]")
+        public WebElement firstViewProduct;
 
-    @FindBy(xpath = "//b[.='Test Cases']")
-    public WebElement testCasesText;
+        @FindBy(xpath = "//div[@class='product-information']")
+        public WebElement productDetails;
 
-    @FindBy(xpath = "//a[@href='/products']")
-    public WebElement productsButton;
+        @FindBy(xpath = "//input[@id='search_product']")
+        public WebElement searchProduct;
 
-    @FindBy(xpath = "//h2[.='All Products']")
-    public WebElement allProductsText;
+        @FindBy(xpath = "//button[@id='submit_search']")
+        public WebElement searchProductSubmit;
 
-    @FindBy(xpath = "//div[@class='productinfo text-center']")
-    public List<WebElement> productListElements;
+        @FindBy(xpath = "//div[@class='productinfo text-center']")
+        public WebElement searchedProduct;
 
-    @FindBy(xpath = "//a[@href='/product_details/1']")
-    public WebElement viewProductFirstElement;
+        @FindBy(xpath = "//h2[.='Subscription']")
+        public WebElement subscriptionTitle;
 
-    @FindBy(xpath = "//div[@class='product-details']")
-    public WebElement productDetails;
+        @FindBy(xpath = "//input[@id='susbscribe_email']")
+        public WebElement subscriptionTextBox;
 
-    @FindBy(xpath = "//span[contains(text(), 'Rs')]")
-    public WebElement priceOfProduct;
+        @FindBy(xpath = "//div[@class='footer-widget']")
+        public WebElement footerElement;
 
-    @FindBy(xpath = "//h2[.='Blue Top']")
-    public WebElement productName;
-
-    @FindBy(id = "search_product")
-    public WebElement searchProductTextBox;
-
-
-
-
-
-
-}
+    }

@@ -1,50 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="17.434" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hooks_test" name="TC_01_test" time="17.041">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#formBasicEmail&quot;}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<testsuite name="Cucumber" time="19.201" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US1017 explicitly wait kullanimi" name="TC23 ilgili allertionlari kapatma" time="18.812">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : This alert appeared after 5 seconds}
+  (Session info: chrome=109.0.5414.120): This alert appeared after 5 seconds
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db0e25bde8f109e6ed8905d91c5cf771, findElement {using=id, value=formBasicEmail}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50722/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db0e25bde8f109e6ed8905d91c5cf771">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#formBasicEmail"}
-  (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Command: [346cca106ea30c7afe5849d9fc8f7b48, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 346cca106ea30c7afe5849d9fc8f7b48">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : This alert appeared after 5 seconds}
+  (Session info: chrome=109.0.5414.120): This alert appeared after 5 seconds
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db0e25bde8f109e6ed8905d91c5cf771, findElement {using=id, value=formBasicEmail}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50722/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db0e25bde8f109e6ed8905d91c5cf771
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+Command: [346cca106ea30c7afe5849d9fc8f7b48, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\busra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 346cca106ea30c7afe5849d9fc8f7b48
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
-	at stepdefinitions.LoginStepDefinitions.user_enters_customer_email_and_customer_password(LoginStepDefinitions.java:40)
-	at ✽.user enters customer_email and customer_password(file:///C:/Users/busra/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:946)
+	at utilities.Driver.getDriver(Driver.java:55)
+	at stepdefinitions.DemoqaStepDefinitions.allert_uzerindeki_yazinin_this_alert_appeared_after_five_seconds_oldugunu_test_edin(DemoqaStepDefinitions.java:90)
+	at ✽.Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin(file:///C:/Users/busra/IdeaProjects/my-cucumber-project/./src/test/resources/features/DemoQA.feature:25)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user is on "https://www.bluerentalcars.com/" page.....................passed
-And user enters customer_email and customer_password........................failed
-Then verify the next page url contains login keyword........................skipped
+Given kullanici "demoqaUrl" anasayfasina....................................passed
+And Alerts,Frame,Windows butonuna tiklar....................................passed
+And kullanici 1 sn bekler...................................................passed
+And Alerts'e tiklar.........................................................passed
+And kullanici 2 sn bekler...................................................passed
+And On button click, alert will appear after five seconds karsisindaki click me butonuna basar.passed
+And Allert'in gorunur olmasini bekleyin.....................................passed
+Then Allert uzerindeki yazinin “This alert appeared after 5 seconds” oldugunu test edin.failed
+And Ok yazisina tiklayarak alerti kapatin...................................skipped
+And sayfayi kapatir.........................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

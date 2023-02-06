@@ -13,8 +13,8 @@ Feature: first feature file
 
   @teapot_search
   Scenario: TC_02_teapot_search
-    When user search for teapot
-    Then verify page title contains teapot
+    When user search for Teapot
+    Then verify page title contains Teapot
     Then close the application
 
 
