@@ -1,11 +1,14 @@
 package hooks;
 
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
+
+import static base_urls.MedunnaBaseUrl.medunnaSetUp;
 
 public class Hooks {
     /*
@@ -44,6 +47,11 @@ public class Hooks {
     @After("@smoke_tests")
     public void tearDownSmokeScenarios(){
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
+    }
+
+    @Before("@TC03_Api")     //it is going to run before @TC03_Api. We call Medunna SetUp with this.
+    public void beforeApi(){
+        medunnaSetUp();
     }
 
 }
